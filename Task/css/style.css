@@ -4,4 +4,55 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+#First {
+  width: 100%;
+}
+
+#First .card {
+  -webkit-box-shadow: 0 10px 13px -7px #000000, 12px 5px 15px 5px rgba(0, 0, 0, 0);
+          box-shadow: 0 10px 13px -7px #000000, 12px 5px 15px 5px rgba(0, 0, 0, 0);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#2edce2));
+  background-image: linear-gradient(to bottom, #ffffff, #2edce2);
+}
+
+#First .card .top {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #152670;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#First .card .center {
+  font-size: 1rem;
+}
+
+#First .card .bottom {
+  background-color: transparent;
+}
+
+#First .card .bottom span {
+  color: #b43434;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#First .card .bottom a {
+  font-weight: 600;
+}
+
+#First .card .last_bottom {
+  position: relative;
+  background-color: transparent;
+}
+
+#First .card .last_bottom button {
+  position: absolute;
+  right: 5%;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  font-size: 10px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,32 +1,48 @@
-let btn=document.getElementById("Add");
-let buttons=document.getElementsByClassName("btn-add")
-let tags=document.getElementsByTagName("button")
-console.log(tags) 
-// let btn=document.querySelector(".btn-add")
-// let btns=document.querySelectorAll(".btn-add")
-// console.log(btns.length) 
 
-// btn.onclick=function(){
-//     alert("Salam")
-// }
-// btn.addEventListener("click",function(){
-//     alert("Sagol")
-// })
+// inputun uzerinde  olanda Ender duymesini basanda button click olsun
+var inp_enter = document.querySelector("#First .center #inp_text");
+inp_enter.addEventListener("keyup", function(e) {
+    
+    if (e.keyCode === 13) {
+      e.preventDefault();
+      document.querySelector("#First .center #btn_add").click();
+    }
+  });
 
-let str=document.getElementsByTagName("p")
-str[0].addEventListener("copy",function(){
-    alert("kopya olmaz")
+ //Click Edende inport etsin
+let Add=document.querySelector("#First .center #btn_add")
+Add.addEventListener("click",function()
+{
+    
+    var list_item = document.querySelector("#First .center #inp_text").value;
+    if (!list_item.trim(' ')) {
+        alert("boş olmaz")
+    } else {
+        var list = document.createElement("li");
+        var btn =document.createElement("button")
+        const listElement = document.querySelector('ul')
+        list.innerText = list_item;
+        btn.innerText="X"
+        list.setAttribute("class","list-group-item list-group-item-secondary my-1")
+        btn.setAttribute("class","btn btn-danger")
+        document.getElementById("list_ul").appendChild(list);
+        let all_dell_btn = document.querySelectorAll("#list_ul li")
+        all_dell_btn.forEach(all_dell_btn => { all_dell_btn.appendChild(btn)})
+        list_item = document.querySelector("#First .center #inp_text").value="" 
+        document.querySelector("#First .center #inp_text").focus() 
+    }
+    
 })
 
-// let str=document.getElementById("text").innerText;
-// console.log(str)
+//Butun siyahini silir
+let Dell_All=document.querySelector("#First #btn_all_delete")
+Dell_All.addEventListener("click",function()
+{
+    let dell_all = document.querySelectorAll("#list_ul li")
+    dell_all.forEach(function (item) {
+            item.remove();
+    });
+})
 
-
-// let html=document.getElementById("text").innerHTML="<b>yeni text metni</b> salam"
-
-// let val=document.querySelector("#num").value;
-// document.querySelector("#num").value="Serxan"
-// console.log(val)
-
-
+//Siyahidaki list elementlerini tek tek silir
 
