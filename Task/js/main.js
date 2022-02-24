@@ -28,8 +28,8 @@ Add.addEventListener("click", function () {
             this.parentElement.remove();
         }
         document.getElementById("list_ul").appendChild(list);
-        let all_dell_btn = document.querySelectorAll("#list_ul li")
-        all_dell_btn.forEach(all_dell_btn => { all_dell_btn.appendChild(btn) })
+        let dell_btn = document.querySelectorAll("#list_ul li")
+        dell_btn.forEach(dell_btn => { dell_btn.appendChild(btn) })
         list_item = document.querySelector("#First .center #inp_text").value = ""
         document.querySelector("#First .center #inp_text").focus()
     }

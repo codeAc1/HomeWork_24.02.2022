@@ -55,4 +55,9 @@
           transform: translateY(50%);
   font-size: 10px;
 }
+
+#Second .left {
+  background-color: red;
+  border-radius: 20px;
+}
 /*# sourceMappingURL=style.css.map */
