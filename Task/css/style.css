@@ -56,8 +56,33 @@
   font-size: 10px;
 }
 
-#Second .left {
-  background-color: red;
-  border-radius: 20px;
+#Second .top .left h1, #Second .top .center h1, #Second .top .right h1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #bcee83;
+  padding: 10px 0;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#Second .top .active h1 {
+  background-color: aquamarine;
+}
+
+#Second .bottom .box {
+  display: none;
+}
+
+#Second .bottom .box.active-menu {
+  display: block;
+}
+
+#Second .bottom .left h1, #Second .bottom .center h1, #Second .bottom .right h1 {
+  border: 1px solid transparent;
+  background-color: #a0a39d;
+  padding: 10px 0;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 /*# sourceMappingURL=style.css.map */

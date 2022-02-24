@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Document</title>
-    </head>
-    <body >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
     <section id="First">
         <div class="container py-5">
-                <div class="card col-lg-6 col-12">
-                    <div class="top card-header">
-                       <span>Görüləcək İşlər</span>
-                    </div>
-                    <div class="center card-body">
-                            <div  class="input-group mt-3">    
-                                <input autofocus id="inp_text" type="text" class="form-control" placeholder="İş əlavə edin">
-                            <div class="input_btn">
-                                <button id="btn_add" class="btn btn-primary">
-                                    <i class="fas fa-plus"></i>
-                                </button>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="bottom card-header d-flex justify-content-lg-between justify-content-between align-items-center">
-                        <span class="left">Siyahı</span>
-                        <a  id="btn_all_delete"  class="right btn btn-danger">Hamısını sil</a>
-                
-                
-                    </div>
-                    <div class="last_bottom card-header">
-                        <ul id="list_ul" class="list-group">
-                           
-                        </ul>
+            <div class="card col-lg-6 col-12">
+                <div class="top card-header">
+                    <span>Görüləcək İşlər</span>
+                </div>
+                <div class="center card-body">
+                    <div class="input-group mt-3">
+                        <input autofocus id="inp_text" type="text" class="form-control" placeholder="İş əlavə edin">
+                        <div class="input_btn">
+                            <button id="btn_add" class="btn btn-primary">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                
+                <div
+                    class="bottom card-header d-flex justify-content-lg-between justify-content-between align-items-center">
+                    <span class="left">Siyahı</span>
+                    <a id="btn_all_delete" class="right btn btn-danger">Hamısını sil</a>
+
+
+                </div>
+                <div class="last_bottom card-header">
+                    <ul id="list_ul" class="list-group">
+
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </section>
     <section id="Second">
         <div class="container">
             <div class="card">
-                <div class="card-header">
-                     <div class="row text-center justify-content-between ">
-                <div class="left col-lg-3">
-                    <h1>Home</h1>
+                <div class="top card-header">
+                    <div class="row text-center justify-content-between align-items-center ">
+                        <div data-index="1" class="active box left col-lg-3">
+                            <h1>Home</h1>
+                        </div>
+                        <div data-index="2" class="box center col-lg-3">
+                            <h1>About</h1>
+                        </div>
+                        <div data-index="3" class="box right col-lg-3">
+                            <h1>Contact</h1>
+                        </div>
+                    </div>
                 </div>
-                <div class="center col-lg-3">
-                    <h1>About</h1>
+                <div class=" bottom card-body">
+                    <div class="row text-center justify-content-between align-items-center ">
+                        <div data-index="1" class="box active-menu left col-lg-12">
+                            <h1>Bu Bir Home Pagedir</h1>
+                        </div>
+                        <div data-index="2" class="box center col-lg-12">
+                            <h1>Bu Bir About Pagedir</h1>
+                        </div>
+                        <div data-index="3" class="box right col-lg-12">
+                            <h1>Bu Bir Contact Pagedir</h1>
+                        </div>
+                    </div>
                 </div>
-                <div class="righat col-lg-3">
-                    <h1>Contact</h1>
-                </div>
-            </div>
-                </div>
-               
             </div>
             
+            
+
         </div>
     </section>
-    </body>
-    <script src="js/main.js"></script>
+</body>
+<script src="js/main.js"></script>
+
 </html>

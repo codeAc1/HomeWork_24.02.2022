@@ -22,9 +22,9 @@ Add.addEventListener("click", function () {
         const listElement = document.querySelector('ul')
         list.innerText = list_item;
         btn.innerText = "X"
-        list.className="list-group-item list-group-item-secondary my-1"
-        btn.className= "btn btn-danger"
-        btn.onclick=function(){
+        list.className = "list-group-item list-group-item-secondary my-1"
+        btn.className = "btn btn-danger"
+        btn.onclick = function () {
             this.parentElement.remove();
         }
         document.getElementById("list_ul").appendChild(list);
@@ -45,6 +45,25 @@ Dell_All.addEventListener("click", function () {
     });
 })
 
+//Tab Menu 
+let btn_select = document.querySelectorAll("#Second .top .box")
+for (let elem of btn_select) {
+    elem.addEventListener("click", function () {
+        document.querySelector("#Second .top .box.active").classList.remove("active")
+        this.classList.add("active")
 
+        let click_id = this.getAttribute("data-index")
+
+        let menues = document.querySelectorAll("#Second .bottom .box")
+        for (let menu of menues) {
+            if (menu.getAttribute("data-index") == click_id) {
+                document.querySelector("#Second .bottom .box.active-menu").classList.remove("active-menu")
+                menu.classList.add("active-menu")
+            }
+        }
+    })
+
+
+}
 
 
